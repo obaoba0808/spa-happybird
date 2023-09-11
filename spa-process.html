@@ -3,24 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<title>台北按摩|正妹按摩|紅牌推薦:快樂鳥按摩</title>
+<title>舒壓按摩完整流程:快樂鳥按摩</title>
 <link rel="icon" href="images/favicon.png">
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <!-- script AMP -->
 <script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <style amp-custom>
 /*general*/
 body {
     font-family: 'Roboto', sans-serif;
     color: #888;
     font-size: 13px;
-    background: #f6f6f6;
+    background: #ffd8e2;
     line-height: 1.5;
 }
 
@@ -34,7 +32,7 @@ h6 {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #444;
+    color: #ff7fa1;
 }
 
 h1 {
@@ -307,6 +305,58 @@ header .content-right i {
     top: -5px;
 }
 
+/*button default*/
+button {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.button,
+a.button {
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.button-full {
+    width: 100%;
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button-shop {
+    background-color: #fff;
+    color: #333;
+    border: 0;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button i,
+.button-full i {
+    margin-right: 4px;
+}
+
+.button:focus {
+    background: #ff1744;
+}
 
 /*sidebar*/
 .sidebar {
@@ -393,193 +443,93 @@ header .content-right i {
 .sidebar ul li:last-child {
     margin-bottom: 16px;
 }
+/*home walkthrough*/
+.home-walkthrough .amp-carousel-button-next {
+    display: none;
+}
 
-/*header cart*/
-.header-cart sup {
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    display: inline-block;
-    background: #fff;
+.home-walkthrough .amp-carousel-button-prev {
+    display: none;
+}
+
+.home-walkthrough {
     text-align: center;
-    border-radius: 50%;
-    position: relative;
-    top: -4px;
-    font-size: 10px;
+    height: 370px;
+    overflow: hidden;
 }
 
-/*button default*/
-button {
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.button,
-a.button {
-    background-color: #ff1744;
-    color: #fff;
-    border: 0;
-    padding: 8px 10px;
-    margin-top: 15px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-    letter-spacing: 1px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
-}
-
-.button-full {
-    width: 100%;
-    background-color: #ff1744;
-    color: #fff;
-    border: 0;
-    padding: 8px 10px;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 13px;
-}
-
-.button-shop {
+.home-walkthrough .content {
+    text-align: center;
+    padding: 24px 20px 15px;
     background-color: #fff;
-    color: #333;
-    border: 0;
-    padding: 3px 8px;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 12px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin: 40px 40px 40px 40px;
 }
 
-.button i,
-.button-full i {
-    margin-right: 4px;
+.home-walkthrough .content .icon i {
+    margin-bottom: 15px;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff7fa1;
 }
 
-.button:focus {
-    background: #ff1744;
+.home-walkthrough .content .text h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 6px 0 10px;
 }
 
-/* home slider center */
-.home-slider-center .content .caption {
+.home-walkthrough .wrap-started {
     position: absolute;
-    bottom: 0;
+    bottom: -29%;
+    display: block;
+    width: 100%;
+}
+
+.home-walkthrough .wrap-started a {
+    padding: 8px 18px;
+    background: #ff1744;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.home-walkthrough .carousel-preview {
+    text-align: center;
+    position: absolute;
     left: 0;
     right: 0;
-    padding: 16px;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
-    color: #fff;
-    top: 0;
-    padding-top: 14%;
-    text-align: center;
+    bottom: 0;
 }
 
-.home-slider-center .content .caption h2 {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.home-slider-center .content .caption p {
-    margin: 8px 22px;
-}
-
-/*product*/
-.product .content {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 3px;
-}
-
-.product select {
+.home-walkthrough .carousel-preview button {
     border: 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 8px rgba(180, 173, 173, 0.5);
-    width: 100%;
-    height: 30px;
-    padding: 0 8px;
-}
-
-.product .content h5 {
-    color: #ff7fa1;
-}
-
-.product .pagination {
-    margin-top: 30px;
-}
-
-.product.new-product.segments {
-    padding-top: 0;
-}
-
-.product-home.new-product .section-title h3 {
-    float: left;
-}
-
-.product-home.new-product .section-title .wrap-more {
-    overflow: hidden;
-    text-align: right;
-}
-
-.product-home.new-product .section-title .wrap-more a {
-    color: #ff7fa1;
-}
-
-/*footer*/
-footer {
     text-align: center;
-    background: #ea2e76;
+    width: 15px;
 }
 
-footer.segments {
-    padding-bottom: 12px;
-}
-
-footer h1 {
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    display: inline-block;
-    color: #fff;
-}
-
-footer img {
-    margin-bottom: 20px;
-}
-
-footer ul {
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid #aaa;
-    padding-bottom: 20px;
-    margin-bottom: 18px;
-}
-
-footer ul li {
-    display: inline-block;
-    margin: 2px 4px;
-}
-
-footer ul li {
-    background: #fff;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+.home-walkthrough .carousel-preview .circle {
+    width: 8px;
+    height: 8px;
+    background: #ff7fa1;
     border-radius: 50%;
-    font-size: 16px;
-    color: #ea2e76;
-}
-
-footer p {
-    color: #fff;
+    display: block;
 }
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
-    
     <!-- header -->
     <header class="header-home">
         <div class="row-grid">
@@ -590,10 +540,10 @@ footer p {
             </div>
              <div class="col-grid-4">
                 <div class="content-center">
-                    <a href="index.html"><h1>正妹按摩</h1></a>
+                    <h1>台北按摩推薦</h1>
                 </div>
             </div>
-            <div class="col-grid-4">
+             <div class="col-grid-4">
                 <div class="content-right">
                     <a href="tel:+886916592425"><i class="fa fa-phone-square"></i></a>
                 </div>
@@ -627,130 +577,85 @@ footer p {
             <li><a href="list-pages.html"><i class="fa fa-list"></i>相關介紹</a></li>
             <li><a href="list-apps.html"><i class="fa fa-cog"></i>應用設定</a></li>
             <li><a href="about.html"><i class="fa fa-info-circle"></i>聯絡我們</a></li>
+
         </ul>
     </amp-sidebar>
-    <!-- end sidebar -->
-
-    <!-- home slider -->
-    <div class="home-slider-center margin-header">
-        <amp-carousel class="carousel-slider" layout="responsive" height="320" width="500" type="slides" autoplay controls loop delay="5000">
+    <!-- home walkthrough -->
+    <div class="home-walkthrough segments">
+        <h5>舒壓按摩完整流程</h5>
+        <amp-carousel layout="responsive" type="slides" width="100" height="100" id="carousel-with-preview" loop autoplay delay="5000">
             <div>
-                <div class="content">
-                    <amp-img src="images/masseur1.jpg" layout="fill"></amp-img>
-                    <div class="caption">
-                        <h2>舒壓按摩</h2>
-                        <p>超高CP值的SPA按摩跟正妹按摩名單</p>
-                        <button class="button">紅牌按摩推薦</button>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-mobile b-shadow"></i>
+                        </div>
+                        <div class="text">
+                            <h2>諮詢客服:快樂鳥</h2>
+                            <p>了解您的需求，介紹適合的服務</p>
+                        </div>
                     </div>
                 </div>
             </div>
-             <div>
-                <div class="content">
-                    <amp-img src="images/masseur2.jpg" layout="fill"></amp-img>
-                    <div class="caption">
-                        <h2>舒壓會館</h2>
-                        <p>台北時尚奢華按摩、明星級按摩舒壓會館</p>
-                        <button class="button">新進按摩師</button>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-female"></i>
+                        </div>
+                        <div class="text">
+                            <h2>選擇美容師</h2>
+                            <p>美容師空班狀況回報，篩選適合您的舒壓會館</p>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="text">
+                            <h2>搭車前往</h2>
+                            <p>搭車前往舒壓會館，並走入館內即有親切服務人員接待簡單做個確認</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text">
+                            <h2>確認完畢</h2>
+                            <p>和您確認預約服務項目與美容師或依現場狀況安排，確認後開始舒壓</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </amp-carousel>
+        <div class="carousel-preview">
+            <button on="tap:carousel-with-preview.goToSlide(index=0)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=1)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=2)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=3)">
+                <span class="circle"></span>
+            </button>
+        </div>  
+        <div class="wrap-started">
+            <a href="index.html">台北舒壓入口</a>
+        </div>   
     </div>
-    <!-- end home slider -->
-
-    <!-- product home -->
-    <div class="product product-home popular-product segments">
-        <div class="container">
-            <div class="section-title">
-                <h3>紅牌按摩師</h3>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product1.png" layout="responsive" height="110" width="110" alt=""></amp-img>
-                    <h5>$3000</h5>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product5.png" layout="responsive" height="110" width="110" alt=""></amp-img>
-                    <h5>$2800</h5>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product3.png" layout="responsive" height="110" width="110" alt=""></amp-img>
-                    <h5>$2600</h5>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product4.png" layout="responsive" height="110" width="110" alt=""></amp-img>
-                    <h5>$2800</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end product home -->
-
-    <!-- product home -->
-    <div class="product product-home new-product segments">
-        <div class="container">
-            <div class="section-title">
-                <h3>新進按摩師</h3>
-                <div class="wrap-more">
-                    <a href="">更多<i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product9.png" layout="responsive" width="110" height="110"alt=""></amp-img>
-                    <h5>$2800</h5>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product10.png" layout="responsive" width="110" height="110"alt=""></amp-img>
-                    <h5>$2600</h5>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product11.png" layout="responsive" width="110" height="110"alt=""></amp-img>
-                    <h5>$2600</h5>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <amp-img src="images/product12.png" layout="responsive" width="110" height="110"alt=""></amp-img>
-                    <h5>$2600</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end product home -->
-
-    <!-- footer -->
-    <footer class="segments">
-        <div class="container">
-            <h1>快樂鳥舒壓按摩</h1>
-            <ul>
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-google"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
-            </ul>
-            <p>Copyright © All Right Reserved</p>
-        </div>
-    </footer>
-    <!-- end footer -->
+    <!-- end home walkthrough -->
 
 </body>
 </html>
