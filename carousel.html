@@ -1,0 +1,394 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Eleco - Mobile Template</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="canonical" href="index.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- script AMP -->
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+<style amp-custom>
+/*general*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-size: 13px;
+    background: #f6f6f6;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: #ff7fa1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f7547f;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a.link-color {
+    color: #ff7fa1;
+}
+
+a.link-color:hover {
+    color: #f7547f;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.b-shadow {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.segments {
+    padding: 30px 0;
+}
+
+.segments-top {
+    padding-top: 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 30px;
+}
+
+.segments-page {
+    padding: 86px 0 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 35px;
+}
+
+.margin-header {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wrap-title {
+    margin-bottom: 15px;
+}
+
+.bg-second {
+    background-color: #fff;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+/* grid 1 - 12*/
+.row-grid {
+    padding: 0 6px;
+    margin-bottom: 20px;
+}
+
+.row-grid:last-child {
+    margin-bottom: 0;
+}
+
+.row-grid:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-grid-1 {
+    width: calc(8.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-2 {
+    width: calc(16.66% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-3 {
+    width: calc(25% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-4 {
+    width: calc(33.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-5 {
+    width: calc(41.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-6 {
+    width: calc(50% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-7 {
+    width: calc(58.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-8 {
+    width: calc(66.68% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-9 {
+    width: calc(75% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-10 {
+    width: calc(83.34% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-11 {
+    width: calc(91.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-12 {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+/*header*/
+header {
+    padding: 15px 0 13px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #ff7fa1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header .content-left i {
+    color: #fff;
+    font-size: 18px;
+}
+
+header .content-center {
+    text-align: center;
+}
+
+header .content-center h1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+header .content-right {
+    text-align: right;
+}
+
+header .content-right i {
+    color: #fff;
+    font-size: 17px;
+}
+
+/*header pages*/
+.header-pages .container {
+    padding: 0 14px;
+}
+
+.header-pages ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-pages ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-pages ul li a i {
+    color: #fff;
+}
+
+.header-pages ul li h4 {
+    margin-left: 30px;
+    color: #fff;
+    position: relative;
+    top: -5px;
+}
+
+/*carousel*/
+.carousel .content {
+    background: #fff;
+    padding: 15px 50px;
+    margin: 6px 3px;
+    text-align: center;
+}
+
+.carousel .amp-carousel-button-next {
+    right: 5px;
+}
+
+.carousel .amp-carousel-button-prev {
+    left: 5px;
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+    
+     <!-- header -->
+    <header class="header-pages">
+        <div class="container">
+            <ul>
+                <li><a href="home.html"><i class="material-icons">arrow_back</i></a></li>
+                <li><h4>舒壓按摩必備知識</h4></li>
+            </ul>
+        </div>
+    </header>
+    <!-- and header -->
+
+    <!-- corousel -->
+    <div class="carousel segments-page">
+        <div class="container">
+            <div class="wrap-title">
+                <h5>正妹按摩</h5>
+            </div>
+            <amp-carousel width="500" height="320" loop controls autoplay delay="3000" type="slides" layout="responsive">
+                <div>
+                    <amp-img src="images/carousel1.jpg" alt="" layout="responsive" width="500" height="320"></amp-img>
+                </div>
+                <div>
+                    <amp-img src="images/carousel2.jpg" alt="" layout="responsive" width="500" height="320"></amp-img>
+                </div>
+                <div>
+                    <amp-img src="images/carousel3.jpg" alt="" layout="responsive" width="500" height="320"></amp-img>
+                </div>
+            </amp-carousel>
+        </div>
+    </div>
+    <!-- end corousel -->
+
+     <!-- corousel text -->
+    <div class="carousel segments-bottom">
+        <div class="container">
+            <div class="wrap-title">
+                <h5>舒壓按摩必備知識</h5>
+            </div>
+            <amp-carousel width="500" height="230" loop controls autoplay delay="3000" type="slides" layout="responsive">
+                <div class="carousel-wrap">
+                    <div class="content b-shadow">
+                        <h3>舒壓會館</h3>
+                        <p>臺灣俗稱護膚店又稱<a href="https://zh.wikipedia.org/zh-tw/%E6%84%9F%E5%AE%98%E6%8C%89%E6%91%A9"
+                            target="_blank">半套店</a>，就是按摩與商業化性服務的結合，服務員為客人按摩時，常會按摩客人的性敏感部位，如大腿內側等，以挑起客人的性慾。</p>
+                    </div>
+                </div>
+                <div class="carousel-wrap">
+                    <div class="content b-shadow">
+                        <h3>按摩排毒</h3>
+                        <p>又稱<a href="https://zh.wikipedia.org/zh-tw/%E6%84%9F%E5%AE%98%E6%8C%89%E6%91%A9"
+                            target="_blank">感官按摩</a>情趣按摩或性感按摩，是一個人對他人的性敏感部位所施行的按摩技巧，使其加強性喚起或達到性興奮。</p>
+                    </div>
+                </div>
+                <div class="carousel-wrap">
+                    <div class="content b-shadow">
+                        <h3>半套按摩價格</h3>
+                       <p>60分鐘$2600~$3000(沐浴10分鐘，美容師服務50分鐘)
+
+                        現場就有提供包廂，比自己在外面找地方還划算，也不會浪費時間，詳細詢問快樂鳥舒壓按摩了解。</p>
+                    </div>
+                </div>
+            </amp-carousel>
+        </div>
+    </div>
+    <!-- end corousel text -->
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>半套按摩一次就上手</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="canonical" href="index.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- script AMP -->
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+<style amp-custom>
+/*general*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-size: 13px;
+    background: #f6f6f6;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a.link-color {
+    color: #ff7fa1;
+}
+
+a.link-color:hover {
+    color: #ff7fa1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.b-shadow {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.segments {
+    padding: 30px 0;
+}
+
+.segments-top {
+    padding-top: 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 30px;
+}
+
+.segments-page {
+    padding: 86px 0 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 35px;
+}
+
+.margin-header {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wrap-title {
+    margin-bottom: 15px;
+}
+
+.bg-second {
+    background-color: #fff;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+/* grid 1 - 12*/
+.row-grid {
+    padding: 0 6px;
+    margin-bottom: 20px;
+}
+
+.row-grid:last-child {
+    margin-bottom: 0;
+}
+
+.row-grid:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-grid-1 {
+    width: calc(8.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-2 {
+    width: calc(16.66% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-3 {
+    width: calc(25% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-4 {
+    width: calc(33.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-5 {
+    width: calc(41.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-6 {
+    width: calc(50% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-7 {
+    width: calc(58.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-8 {
+    width: calc(66.68% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-9 {
+    width: calc(75% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-10 {
+    width: calc(83.34% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-11 {
+    width: calc(91.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-12 {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+/*header*/
+header {
+    padding: 15px 0 13px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #ff7fa1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header .content-left i {
+    color: #fff;
+    font-size: 18px;
+}
+
+header .content-center {
+    text-align: center;
+}
+
+header .content-center h1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+header .content-right {
+    text-align: right;
+}
+
+header .content-right i {
+    color: #fff;
+    font-size: 17px;
+}
+
+/*header pages*/
+.header-pages .container {
+    padding: 0 14px;
+}
+
+.header-pages ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-pages ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-pages ul li a i {
+    color: #fff;
+}
+
+.header-pages ul li h4 {
+    margin-left: 30px;
+    color: #fff;
+    position: relative;
+    top: -5px;
+}
+
+/*button default*/
+button {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.button,
+a.button {
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.button-full {
+    width: 100%;
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button-shop {
+    background-color: #fff;
+    color: #333;
+    border: 0;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button i,
+.button-full i {
+    margin-right: 4px;
+}
+
+.button:focus {
+    background: #ff1744;
+}
+
+/*home walkthrough*/
+.home-walkthrough .amp-carousel-button-next {
+    display: none;
+}
+
+.home-walkthrough .amp-carousel-button-prev {
+    display: none;
+}
+
+.home-walkthrough {
+    text-align: center;
+    height: 370px;
+    overflow: hidden;
+}
+
+.home-walkthrough .content {
+    text-align: center;
+    padding: 24px 20px 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 40px 40px 40px 40px;
+}
+
+.home-walkthrough .content .icon i {
+    margin-bottom: 15px;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff7fa1;
+}
+
+.home-walkthrough .content .text h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 6px 0 10px;
+}
+
+.home-walkthrough .wrap-started {
+    position: absolute;
+    bottom: -29%;
+    display: block;
+    width: 100%;
+}
+
+.home-walkthrough .wrap-started a {
+    padding: 8px 18px;
+    background: #ff1744;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.home-walkthrough .carousel-preview {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-walkthrough .carousel-preview button {
+    border: 0;
+    text-align: center;
+    width: 15px;
+}
+
+.home-walkthrough .carousel-preview .circle {
+    width: 8px;
+    height: 8px;
+    background: #aaa;
+    border-radius: 50%;
+    display: block;
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+    
+    <!-- home walkthrough -->
+    <div class="home-walkthrough segments">
+        <h5>半套按摩一次就上手</h5>
+        <amp-carousel layout="responsive" type="slides" width="100" height="100" id="carousel-with-preview" loop autoplay delay="5000">
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <div class="text">
+                            <h2>諮詢客服:快樂鳥</h2>
+                            <p>了解您的需求，介紹適合的服務</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-hand-pointer-o"></i>
+                        </div>
+                        <div class="text">
+                            <h2>選擇美容師</h2>
+                            <p>美容師空班狀況回報，篩選適合您的舒壓會館</p>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="text">
+                            <h2>搭車前往</h2>
+                            <p>搭車前往舒壓會館，並走入館內即有親切服務人員接待簡單做個確認</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-check-square-o"></i>
+                        </div>
+                        <div class="text">
+                            <h2>確認完畢</h2>
+                            <p>和您確認預約服務項目與美容師或依現場狀況安排，確認後開始紓壓</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </amp-carousel>
+        <div class="carousel-preview">
+            <button on="tap:carousel-with-preview.goToSlide(index=0)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=1)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=2)">
+                <span class="circle"></span>
+            </button>
+            <button on="tap:carousel-with-preview.goToSlide(index=3)">
+                <span class="circle"></span>
+            </button>
+        </div>  
+        <div class="wrap-started">
+            <a href="list-home.html">回首頁</a>
+        </div>   
+    </div>
+    <!-- end home walkthrough -->
+
+</body>
+</html>

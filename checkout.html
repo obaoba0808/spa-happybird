@@ -1,0 +1,626 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Eleco - Mobile Template</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="canonical" href="index.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- script AMP -->
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<style amp-custom>
+/*general*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-size: 13px;
+    background: #f6f6f6;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a.link-color {
+    color: #ff7fa1;
+}
+
+a.link-color:hover {
+    color: #ff7fa1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.b-shadow {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.segments {
+    padding: 30px 0;
+}
+
+.segments-top {
+    padding-top: 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 30px;
+}
+
+.segments-page {
+    padding: 86px 0 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 35px;
+}
+
+.margin-header {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wrap-title {
+    margin-bottom: 15px;
+}
+
+.bg-second {
+    background-color: #fff;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+/* grid 1 - 12*/
+.row-grid {
+    padding: 0 6px;
+    margin-bottom: 20px;
+}
+
+.row-grid:last-child {
+    margin-bottom: 0;
+}
+
+.row-grid:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-grid-1 {
+    width: calc(8.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-2 {
+    width: calc(16.66% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-3 {
+    width: calc(25% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-4 {
+    width: calc(33.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-5 {
+    width: calc(41.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-6 {
+    width: calc(50% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-7 {
+    width: calc(58.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-8 {
+    width: calc(66.68% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-9 {
+    width: calc(75% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-10 {
+    width: calc(83.34% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-11 {
+    width: calc(91.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-12 {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+/*header*/
+header {
+    padding: 15px 0 13px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #ff7fa1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header .content-left i {
+    color: #fff;
+    font-size: 18px;
+}
+
+header .content-center {
+    text-align: center;
+}
+
+header .content-center h1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+header .content-right {
+    text-align: right;
+}
+
+header .content-right i {
+    color: #fff;
+    font-size: 17px;
+}
+
+/*header pages*/
+.header-pages .container {
+    padding: 0 14px;
+}
+
+.header-pages ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-pages ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-pages ul li a i {
+    color: #fff;
+}
+
+.header-pages ul li h4 {
+    margin-left: 30px;
+    color: #fff;
+    position: relative;
+    top: -5px;
+}
+
+/*button default*/
+button {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.button,
+a.button {
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.button-full {
+    width: 100%;
+    background-color: #ff1744;
+    color: #fff;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button-shop {
+    background-color: #fff;
+    color: #333;
+    border: 0;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button i,
+.button-full i {
+    margin-right: 4px;
+}
+
+.button:focus {
+    background: #ff1744;
+}
+
+/*checkout*/
+.checkout {
+    margin-bottom: 20px;
+}
+
+.checkout .checkout-info {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.checkout .no-mb {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.product-choosed {
+    padding: 15px 0;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.product-choosed .button {
+    margin: 0 15px;
+}
+
+.product-choosed.first {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.product-choosed .row {
+    margin-bottom: 5px;
+}
+
+.product-choosed .row:last-child {
+    margin-bottom: 0;
+}
+
+.product-choosed .remove i {
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 3px;
+}
+
+.product-choosed .contents img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-choosed .contents input {
+    width: 50px;
+    height: 24px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.product-choosed .contents .price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff7fa1;
+}
+
+.checkout-button {
+    margin-top: 15px;
+}
+
+.product-choosed .contents input[type=number]:not(.browser-default):focus:not([readonly]) {
+    border-bottom-color: #ddd;
+    box-shadow: none;
+}
+
+/*total pay*/
+.total-pay {
+    padding: 15px 0;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.total-pay .col-grid-4 {
+    padding: 0 6px;
+    text-align: right;
+}
+
+.total-pay .button {
+    margin: 0 16px;
+}
+
+.total-pay .contents h5 {
+    margin-top: 10px;
+}
+
+.total-pay .button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*form*/
+form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #9e9e9e;
+    padding: 10px 0;
+    margin-bottom: 14px;
+    background: transparent;
+}
+
+form input:focus {
+	outline: none;
+}
+
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #9e9e9e;
+    padding: 10px 0;
+    margin-bottom: 14px;
+    background: transparent;
+}
+
+form textarea:focus {
+	outline: none;
+}
+
+form select {
+    display: block;
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+    
+     <!-- header -->
+    <header class="header-pages">
+        <div class="container">
+            <ul>
+                <li><a href="list-shop.html"><i class="material-icons">arrow_back</i></a></li>
+                <li><h4>Checkout</h4></li>
+            </ul>
+        </div>
+    </header>
+    <!-- and header -->
+	
+	<!-- checkout -->
+	<div class="segments-page">
+		<div class="container">
+			<div class="checkout">
+				<form action-xhr="#!" method="post">
+					<div class="checkout-info b-shadow">
+						<div class="input-field">
+							<label>Name</label>
+							<input type="text" value="John Doe">
+						</div>
+						<div class="input-field">
+							<label>Email</label>
+							<input type="email" value="contact@yourcontact.com">
+						</div>
+						<div class="input-field">
+							<label>Telepon</label>
+							<input type="text" value="+123456789">
+						</div>
+						<div class="input-field">
+							<label>Billing Address</label>
+							<textarea class="materialize-textarea" cols="30" rows="10">0450 Village Street, New York, United States, 090</textarea>
+						</div>
+						<div class="input-field">
+							<label>Shipping Address</label>
+							<textarea class="materialize-textarea" cols="30" rows="10">0450 Village Street, New York, United States, 090</textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="product-choosed b-shadow">
+				<div class="row-grid">
+					<div class="col-grid-4">
+						<div class="contents">
+							<amp-img src="images/product1.png" layout="responsive" height="95" width="80" alt=""></amp-img>
+						</div>
+					</div>
+					<div class="col-grid-6">
+						<div class="contents">
+							<a href="">Casual Clothes in a Modern Style</a>
+						</div>
+					</div>
+					<div class="col-grid-2">
+						<div class="contents remove">
+							<a href=""><i class="fa fa-remove"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row-grid">
+					<div class="col-grid-4">
+						<div class="contents">
+							<p>Price</p>
+						</div>
+					</div>
+					<div class="col-grid-7">
+						<div class="contents">
+							<p class="price">$28</p>
+						</div>
+					</div>
+					<div class="col-grid-4">
+						<div class="contents">
+							<p>Quality</p>
+						</div>
+					</div>
+					<div class="col-grid-7">
+						<form action-xhr="#!" method="post">
+							<div class="contents">
+								<div class="input-field">
+									<input type="number" value="1">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<button class="button waves-effect waves-light"><i class="fa fa-remove"></i>Remove</button>
+			</div>
+			<div class="total-pay b-shadow">
+				<div class="row-grid">
+					<div class="col-grid-8">
+						<div class="contents">
+							<p>Casual Clothes in a Modern Style</p>
+						</div>
+					</div>
+					<div class="col-grid-4">
+						<div class="contents right">
+							<p>$28</p>
+						</div>
+					</div>
+					<div class="col-grid-8">
+						<div class="contents">
+							<p>Casual Clothes in a Modern Style</p>
+						</div>
+					</div>
+					<div class="col-grid-4">
+						<div class="contents right">
+							<p>$28</p>
+						</div>
+					</div>
+					<div class="col-grid-8">
+						<div class="contents">
+							<h5>Total</h5>
+						</div>
+					</div>
+					<div class="col-grid-4">
+						<div class="contents right">
+							<h5>$56</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="button waves-effect waves-light checkout-button"><i class="fa fa-send"></i>Chekcout</button>
+		</div>
+	</div>
+	<!-- end checkout -->
+
+
+</body>
+</html>

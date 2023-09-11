@@ -1,0 +1,730 @@
+<!doctype html>
+<html ⚡>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Eleco - Mobile Template</title>
+<link rel="icon" href="images/favicon.png">
+<link rel="canonical" href="index.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<!-- script AMP -->
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+<style amp-custom>
+/*general*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-size: 13px;
+    background: #f6f6f6;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 110%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #444;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a.link-color {
+    color: #ff7fa1;
+}
+
+a.link-color:hover {
+    color: #ff7fa1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.b-shadow {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.segments {
+    padding: 30px 0;
+}
+
+.segments-top {
+    padding-top: 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 30px;
+}
+
+.segments-page {
+    padding: 86px 0 30px;
+}
+
+.segments-bottom {
+    padding-bottom: 35px;
+}
+
+.margin-header {
+    margin-top: 50px;
+}
+
+.section-title {
+    margin-bottom: 16px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.wrap-title {
+    margin-bottom: 15px;
+}
+
+.bg-second {
+    background-color: #fff;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.border-radius-3 {
+    border-radius: 3px;
+}
+
+/* grid 1 - 12*/
+.row-grid {
+    padding: 0 6px;
+    margin-bottom: 20px;
+}
+
+.row-grid:last-child {
+    margin-bottom: 0;
+}
+
+.row-grid:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-grid-1 {
+    width: calc(8.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-2 {
+    width: calc(16.66% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-3 {
+    width: calc(25% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-4 {
+    width: calc(33.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-5 {
+    width: calc(41.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-6 {
+    width: calc(50% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-7 {
+    width: calc(58.33% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-8 {
+    width: calc(66.68% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-9 {
+    width: calc(75% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-10 {
+    width: calc(83.34% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-11 {
+    width: calc(91.67% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+.col-grid-12 {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    float: left;
+}
+
+/*header*/
+header {
+    padding: 15px 0 13px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #ff7fa1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+header .content-left i {
+    color: #fff;
+    font-size: 18px;
+}
+
+header .content-center {
+    text-align: center;
+}
+
+header .content-center h1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+header .content-right {
+    text-align: right;
+}
+
+header .content-right i {
+    color: #fff;
+    font-size: 17px;
+}
+
+/*header pages*/
+.header-pages .container {
+    padding: 0 14px;
+}
+
+.header-pages ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-pages ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-pages ul li a i {
+    color: #fff;
+}
+
+.header-pages ul li h4 {
+    margin-left: 30px;
+    color: #fff;
+    position: relative;
+    top: -5px;
+}
+/* home slider news */
+.home-slider-news .content .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    color: #fff;
+    top: 0;
+    padding-top: 14%;
+}
+
+.home-slider-news .content .caption .category span {
+    background: #ff7fa1;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.home-slider-news .content .caption h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.home-slider-news .content .caption p {
+    margin: 8px 0;
+}
+
+.home-slider-news .amp-carousel-button-next {
+    left: 60px;
+}
+
+.home-slider-news .amp-carousel-button {
+    top: 82%;
+}
+/*home news*/
+.home-news .content amp-img img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+.home-news .content {
+    position: relative;
+}
+
+.new-item .content .category {
+    margin-bottom: 10px;
+}
+
+.new-item .content .category span {
+    color: #ff7fa1;
+}
+
+.new-item .content .category span {
+    color: #ff7fa1;
+}
+
+.new-item .content .category ul {
+    padding: 0;
+    margin: 0;
+}
+
+.new-item .content .category ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.new-item .content .category ul li:last-child {
+    float: right;
+    font-size: 11px;
+    color: #888;
+}
+
+.new-item .content .text {
+    margin-top: 10px;
+}
+
+.new-item .content .text h6 {
+    line-height: 20px;
+}
+
+.home-news.popular-item.segments {
+    padding-top: 0;
+}
+
+.home-news.popular-item .section-title {
+    border-top: 2px solid #ddd;
+    padding-top: 26px;
+}
+
+.home-news.popular-item .content .category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.home-news.popular-item .content .category span {
+    background: #ff7fa1;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.home-news.popular-item .content .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.home-news.popular-item .content .text h6 {
+    color: #fff;
+    line-height: 20px;
+}
+
+.home-news.popular-item .content-text h6 {
+    line-height: 20px;
+}
+
+.home-news.popular-item .content .mask {
+    background: linear-gradient(rgba(0, 0, 0, 0) 30%, black);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+
+.home-news.popular-item .content-image img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.home-news.popular-item .content-text .category span {
+    color: #ff7fa1;
+}
+
+.home-news.popular-item .content-text .date {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+}
+
+/*pagination*/
+.pagination ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.pagination ul li {
+    list-style: none;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: top;
+    height: 30px;
+    display: inline-block;
+}
+
+.pagination ul li a {
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    line-height: 30px;
+}
+
+.pagination li.disabled a {
+    color: #fff;
+    background: #ff7fa1;
+    border-radius: 3px;
+}
+
+.pagination-page .pagination {
+    margin-bottom: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.09), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-page .pagination:last-child {
+    margin-bottom: 0;
+}
+/*footer*/
+footer {
+    text-align: center;
+    background: #37474f;
+}
+
+footer.segments {
+    padding-bottom: 12px;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+footer img {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 2px 4px;
+}
+
+footer ul li {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #262626;
+}
+
+footer p {
+    color: #fff;
+}
+</style>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+    
+     <!-- header -->
+    <header class="header-pages">
+        <div class="container">
+            <ul>
+                <li><a href="list-blog.html"><i class="material-icons">arrow_back</i></a></li>
+                <li><h4>Blog Grid</h4></li>
+            </ul>
+        </div>
+    </header>
+    <!-- and header -->
+
+    <!-- home slider  news-->
+    <div class="home-slider-news margin-header">
+        <amp-carousel class="carousel-slider" layout="responsive" height="320" width="500" type="slides" autoplay loop delay="5000">
+            <div>
+                <div class="content">
+                    <amp-img src="images/slider-news1.jpg" layout="fill"></amp-img>
+                    <div class="caption">
+                        <div class="category">
+                            <span>Fruit</span>
+                            <p class="date">
+                                <i class="fa fa-clock-o"></i>
+                                Jan 18, 2018
+                            </p>
+                        </div>
+                    <a href=""><h2>Fresh fruit directly taken from his garden</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <amp-img src="images/slider-news2.jpg" layout="fill"></amp-img>
+                    <div class="caption">
+                        <div class="category">
+                            <span>Fruit</span>
+                            <p class="date">
+                                <i class="fa fa-clock-o"></i>
+                                Jan 18, 2018
+                            </p>
+                        </div>
+                        <a href=""><h2>Motor cross attraction on the high mountain</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    <amp-img src="images/slider-news3.jpg" layout="fill"></amp-img>
+                    <div class="caption">
+                        <div class="category">
+                            <span>Fruit</span>
+                            <p class="date">
+                                <i class="fa fa-clock-o"></i>
+                                Jan 18, 2018
+                            </p>
+                        </div>
+                    <a href=""><h2>Most delicious and comfortable restaurant</h2></a>
+                    </div>
+                </div>
+            </div>
+        </amp-carousel>
+    </div>
+    <!-- end home slider news -->
+
+    <!-- home news -->
+    <div class="home-news new-item segments">
+        <div class="row-grid">
+            <div class="col-grid-6">
+                <div class="content">
+                    <amp-img src="images/news1.jpg" layout="responsive" width="150" height="150" alt=""></amp-img>
+                    <div class="text">
+                        <div class="category">
+                            <ul>
+                                <li>
+                                    <span>Food</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    Jan 18, 2018
+                                </li>
+                            </ul>
+                        </div>
+                        <a href=""><h6>Types of traditional snacks</h6></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-grid-6">
+                <div class="content">
+                    <amp-img src="images/news2.jpg" layout="responsive" width="150" height="150" alt=""></amp-img>
+                    <div class="text">
+                        <div class="category">
+                            <ul>
+                                <li>
+                                    <span>Fashion</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    Jan 18, 2018
+                                </li>
+                            </ul>
+                        </div>
+                        <a href=""><h6>Comes with the latest modern style</h6></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-grid-6">
+                <div class="content">
+                    <amp-img src="images/news3.jpg" layout="responsive" width="150" height="150" alt=""></amp-img>
+                    <div class="text">
+                        <div class="category">
+                            <ul>
+                                <li>
+                                    <span>Sport</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    Jan 18, 2018
+                                </li>
+                            </ul>
+                        </div>
+                        <a href=""><h6>The racer who won first champion</h6></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-grid-6">
+                <div class="content">
+                    <amp-img src="images/news4.jpg" layout="responsive" width="150" height="150" alt=""></amp-img>
+                    <div class="text">
+                        <div class="category">
+                            <ul>
+                                <li>
+                                    <span>Techno</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    Jan 18, 2018
+                                </li>
+                            </ul>
+                        </div>
+                        <a href=""><h6>Using the modern technology</h6></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="pagination">
+                <ul>
+                    <li class="disabled"><a class="z-depth-1" href="">1</a></li>
+                    <li><a class="waves-effect waves-light-grey" href="">2</a></li>
+                    <li><a class="waves-effect waves-light-grey" href="">3</a></li>
+                    <li><a class="waves-effect waves-light-grey" href="">4</a></li>
+                    <li><a class="waves-effect waves-light-grey" href="">5</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end home news -->
+
+    <!-- footer -->
+    <footer class="segments">
+        <div class="container">
+            <h1>ELECO</h1>
+            <ul>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-google"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <p>Copyright © All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</body>
+</html>
