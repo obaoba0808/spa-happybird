@@ -1,0 +1,16 @@
+{
+  "short_name": "台北舒壓按摩推薦首選:快樂鳥按摩摩",
+  "name": "台北舒壓按摩推薦首選:快樂鳥按摩摩",
+  "icons": [
+    {
+      "src": "/images/舒壓會館.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "https://obaoba0808.github.io/spa-happybird/index.html?launcher=true",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#ff7fa1"
+}
