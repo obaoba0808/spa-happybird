@@ -8,10 +8,12 @@
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900%7CMaterial+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="manifest" href="/manifest.json">
 <!-- script AMP -->
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
 <style amp-custom>
 /*general*/
@@ -846,6 +848,9 @@ a.button {
         </div>
     </footer>
     <!-- end footer -->
-
+<amp-install-serviceworker
+      src="https://obaoba0808.github.io/spa-happybird/sw.js"
+      layout="nodisplay">
+</amp-install-serviceworker>
 </body>
 </html>
