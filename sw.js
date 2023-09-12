@@ -1,5 +1,5 @@
-const dataCacheName = 'pwa-test-data';
-const cacheName = 'pwa-test';
+const dataCacheName = '快樂鳥按摩摩';
+const cacheName = '快樂鳥按摩摩';
 const filesToCache = [
   '/',
   '/index.html',
