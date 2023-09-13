@@ -12,6 +12,7 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+<script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
 
 <style amp-custom>
 /*general*/
@@ -564,6 +565,112 @@ a.button {
     margin: 0;
     color: #242424;
 }
+
+/*home walkthrough*/
+.home-walkthrough .amp-carousel-button-next {
+    display: none;
+}
+
+.home-walkthrough .amp-carousel-button-prev {
+    display: none;
+}
+
+.home-walkthrough {
+    text-align: center;
+    height: 250px;
+    overflow: hidden;
+}
+
+.home-walkthrough .content {
+    text-align: center;
+    padding: 24px 20px 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 40px 40px 40px 40px;
+}
+
+.home-walkthrough .content .icon i {
+    margin-bottom: 15px;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff7fa1;
+}
+
+.home-walkthrough .content .text h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 6px 0 10px;
+}
+
+.home-walkthrough .wrap-started {
+    position: absolute;
+    bottom: -29%;
+    display: block;
+    width: 100%;
+}
+
+.home-walkthrough .wrap-started a {
+    padding: 8px 18px;
+    background: #ff1744;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.home-walkthrough .carousel-preview {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-walkthrough .carousel-preview button {
+    border: 0;
+    text-align: center;
+    width: 15px;
+}
+
+.home-walkthrough .carousel-preview .circle {
+    width: 8px;
+    height: 8px;
+    background: #ff7fa1;
+    border-radius: 50%;
+    display: block;
+}
+
+/* features */
+.features .content {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.features .content i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #ff7fa1;
+}
+
+.features .content h4 {
+    margin-bottom: 10px;
+}
+
+.features .content p {
+    margin-bottom: 0;
+}
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <meta name="description" content="舒壓會館於台北舒壓按摩 獨家客評專區，舒壓會館老司機首選，多間舒壓會館任君選擇優質正妹按摩，全身放鬆後再以油壓放鬆一次到位超舒服|快樂鳥舒壓按摩TEL:0916-592425 或 +LINE:@030odzmk">
@@ -578,6 +685,7 @@ a.button {
         content="舒壓會館於台北舒壓按摩 獨家客評專區，舒壓會館老司機首選，多間舒壓會館任君選擇優質正妹按摩，全身放鬆後再以油壓放鬆一次到位超舒服|快樂鳥舒壓按摩TEL:0916-592425 或 +LINE:@030odzmk">
     <meta property="og:site_name" content="台北舒壓按摩推薦首選:快樂鳥按摩">
     <link rel="shortcut icon" href="images/favicon.png">
+
     <script type="application/ld+json">
     [{
       "@context": "https://schema.org/",
@@ -777,111 +885,183 @@ a.button {
         </div>
     </div>
     <!-- end filter home -->
-
-    <!-- features home -->
-    <div class="features-home segments">
+    <!-- home walkthrough -->
+    <div class="home-walkthrough segments">
+        <h5>舒壓按摩完整流程</h5>
+        <amp-carousel layout="responsive" type="slides" width="100" height="100" id="carousel-with-preview" loop autoplay delay="5000">
+           
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-mobile b-shadow"></i>
+                        </div>
+                        <div class="text">
+                            <h2>諮詢客服:快樂鳥</h2>
+                            <p>了解您的需求，介紹適合的服務</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-female"></i>
+                        </div>
+                        <div class="text">
+                            <h2>選擇美容師</h2>
+                            <p>美容師空班狀況回報，篩選適合您的舒壓會館</p>
+                        </div>
+                    </div>
+                </div>           
+            
+            
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="text">
+                            <h2>搭車前往</h2>
+                            <p>搭車前往舒壓會館，並走入館內即有親切服務人員接待簡單做個確認</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="wrap-content">
+                    <div class="content b-shadow">
+                        <div class="icon">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text">
+                            <h2>確認完畢</h2>
+                            <p>和您確認預約服務項目與美容師或依現場狀況安排，確認後開始舒壓</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </amp-carousel>
+        
+    </div>
+    <!-- end home walkthrough -->
+    
+    <!-- features -->
+    <div class="features segments">
         <div class="container">
             <div class="section-title">
-                <h3>備品提供</h3>
+                <h3>林森北路按摩</h3>
             </div>
         </div>
         <div class="row-grid">
             <div class="col-grid-6">
                 <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>拖鞋</h6>
+                    <i class="fa fa-check-square-o"></i>
+                    <h4>催情精油</h4>
+                    <p>作為催情用。香氣容易使人聯想到嫵媚且魂牽夢縈的蠢蠢欲動感，加速點燃彼此內心的慾火！</p>
                 </div>
             </div>
             <div class="col-grid-6">
                 <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>浴帽</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>毛巾</h6>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>紙褲</h6>
+                    <i class="fa fa-check-square-o"></i>
+                    <h4>正妹按摩</h4>
+                    <p>正妹按摩師年約20初的「美女」，衣著性感，搭上熟嫻的手工技巧，給您幸福至極的寵愛！</p>
                 </div>
             </div>
         </div>
         <div class="row-grid">
             <div class="col-grid-6">
                 <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>浴衣</h6>
+                    <i class="fa fa-check-square-o"></i>
+                    <h4>情趣按摩</h4>
+                    <p>於性敏感部位所施行的輕功按摩技巧，使其加強性喚起或達到性興奮。</p>
                 </div>
             </div>
             <div class="col-grid-6">
                 <div class="content b-shadow">
-                    <h6><i class="fa fa-check-circle"></i>保養用品</h6>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="section-title">
-                <h3>美容師特性</h3>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>顏質</h6>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>年齡</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>重案</h6>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>技術</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>匈奴</h6>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>服務</h6>
-                </div>
-            </div>
-        </div>
-        <div class="row-grid">
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>互動</h6>
-                </div>
-            </div>
-            <div class="col-grid-6">
-                <div class="content b-shadow">
-                    <h6><i class="fa fa-heart"></i>女友Feel</h6>
+                    <i class="fa fa-check-square-o"></i>
+                    <h4>環境優美</h4>
+                    <p>搭配燈光好、氣氛佳的環境，還能緩解性愛前的害臊與緊張。</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- and features home -->
+    <!-- end features -->
+
+    <!-- portfolio -->
+    <div class="portfolio segments bg-second">
+        <div class="container">
+            <div class="section-title">
+                <h3>台北按摩推薦</h3>
+            </div>
+        </div>
+        <amp-image-lightbox id="lightbox-portfolio" layout="nodisplay"></amp-image-lightbox>
+        <div class="row-grid">
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio1.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio2.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio3.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio4.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+        </div>
+        <div class="row-grid">
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio5.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+            <div class="col-grid-6">
+                <amp-img on="tap:lightbox-portfolio" class="border-radius-3" role="button" tabindex="0" src="images/portfolio6.jpg" layout="responsive" width="158" height="106"></amp-img>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio -->
+   <!-- client -->
+	<div class="client segments-page">
+        <div class="container">
+            <div class="section-title">
+                <h3>好站推薦</h3>
+            </div>
+        </div>
+		<div class="row-grid">
+			<div class="col-grid-6">
+				<div class="content b-shadow">
+                    <a href="https://fowha.com/" target="_blank"> <amp-img src="images/client1.png" width="136" height="23" layout="responsive" alt="楓華傳播"></amp-img></a>
+				</div>
+			</div>
+			<div class="col-grid-6">
+				<div class="content b-shadow">
+					<a href="https://starpoint.site/" target="_blank"> <amp-img src="images/client2.png" width="136" height="23" layout="responsive" alt="星亮點國際娛樂"></amp-img></a>
+				</div>
+			</div>
+		</div>
+        <div class="row-grid">
+			<div class="col-grid-6">
+				<div class="content b-shadow">
+					<a href="https://obaoba.tk/" target="_blank"> <amp-img src="images/client3.png" width="136" height="23" layout="responsive" alt="歐爸傳播"></amp-img></a>
+				</div>
+			</div>
+			<div class="col-grid-6">
+				<div class="content b-shadow">
+					<a href="https://ilohas.site/" target="_blank"> <amp-img src="images/client4.png" width="136" height="23" layout="responsive" alt="愛樂樂按摩"></amp-img></a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- end client -->
     
     <!-- footer -->
     <footer class="footer-home">
         <div class="container">
             <div class="content">
-                <h4>告知我們你需要的按摩師屬於哪種即可約OR先看照片</h4>
+                <h4>告知我們你的需求即可約OR先看照片</h4>
                 <a href="https://line.me/R/ti/p/@030odzmk">馬上約</a>
                 <a href="home-news.html">看照片</a>
             </div>
@@ -891,9 +1071,6 @@ a.button {
         </div>
     </footer>
     <!-- end footer -->
-<amp-install-serviceworker src="/sw.js"
-           data-iframe-src="install-sw.html"
-           layout="nodisplay">
-</amp-install-serviceworker>
+
 </body>
 </html>
