@@ -10,7 +10,7 @@
     }
   ],
   "start_url": "https://obaoba0808.github.io/spa-happybird/index.html?launcher=true",
-  "background_color": "#ffffff",
+  "background_color": "#f1f1f1",
   "display": "standalone",
   "theme_color": "#ff7fa1"
 }
