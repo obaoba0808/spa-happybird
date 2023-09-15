@@ -13,6 +13,7 @@
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
 <style amp-custom>
 /*general*/
@@ -684,6 +685,18 @@ a.button {
     <meta property="og:description"
         content="舒壓會館於台北舒壓按摩 獨家客評專區，舒壓會館老司機首選，多間舒壓會館任君選擇優質正妹按摩，全身放鬆後再以油壓放鬆一次到位超舒服|快樂鳥舒壓按摩TEL:0916-592425 或 +LINE:@030odzmk">
     <meta property="og:site_name" content="台北舒壓按摩推薦首選:快樂鳥按摩">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="快樂鳥舒壓按摩網">
+    <link rel="apple-touch-icon" sizes="150x150" href="images/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="快樂鳥舒壓按摩網">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/舒壓會館1.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="images/舒壓會館.png">
+    <link rel="manifest" href="/manifest.json">
     <link rel="shortcut icon" href="images/favicon.png">
 
     <script type="application/ld+json">
@@ -1071,6 +1084,9 @@ a.button {
         </div>
     </footer>
     <!-- end footer -->
-
+    <amp-install-serviceworker
+      src="https://happybird.site/sw.js"
+      layout="nodisplay">
+</amp-install-serviceworker>
 </body>
 </html>
