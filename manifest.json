@@ -1,0 +1,16 @@
+{
+  "short_name": "快樂鳥舒壓按摩網",
+  "name": "快樂鳥舒壓按摩網",
+  "icons": [
+    {
+      "src": "/images/舒壓會館.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "https://obaoba0808.github.io/spa-happybird/index.html?launcher=true",
+  "background_color": "#12000a",
+  "display": "standalone",
+  "theme_color": "#fa004f"
+}
