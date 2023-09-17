@@ -1,0 +1,21 @@
+{
+    "name": "快樂鳥舒壓網",
+    "short_name": "快樂鳥舒壓網",
+    "icons": [{
+        "src": "images/舒壓會館1.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }, {
+        "src": "images/舒壓會館.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "index.html",
+    "scope": "./",
+    "theme_color": "#ffd31d",
+    "background_color": "#333",
+    "display": "standalone"
+  }
+  
