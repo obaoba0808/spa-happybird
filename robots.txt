@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap:https://obaoba0808.github.io/spa-happybird/sitemap.xml
+Sitemap:https://happybird-spa.ddns.net/sitemap.xml
